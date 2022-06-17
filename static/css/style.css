@@ -1,0 +1,133 @@
+.artisan_ai_tags_term_item {
+	display:inline-block;
+	padding: 5px;
+}
+
+.artisan_ai_tags_term_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*Settings page*/
+.artisan_ai_tags_classifier_container {
+	margin: 2%;
+	padding: 1%;
+	background-color: #cccccc;
+	border-radius: 5px;
+
+	overflow: auto;
+}
+
+#artisan_ai_tags_save_settings_form {
+	display : flex;
+	flex-wrap: wrap;
+}
+
+#artisan_ai_tags_save_settings_form > div {
+	width: 45%;
+	margin-right: 4%;
+	margin-bottom: 2em;
+}
+
+.artisan_ai_tags_checkbox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.artisan_ai_tags_checkbox_option {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.artisan_ai_tags_button {
+	margin-top: 2em !important;
+	margin-right: 2em !important;
+	margin-bottom: .5em !important;
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .artisan_ai_tags_save_settings_form {
+    flex-direction: column;
+  }
+
+  #artisan_ai_tags_save_settings_form > div {
+  	width: 100%;
+  }
+}
+
+#artisan_ai_tags_past_classifiers {
+	margin-left : 2%;
+}
+
+.artisan_ai_tags_classifier_info_item {
+	margin-bottom: .5em;
+}
+
+.artisan_ai_tags_classifier_info_item > span {
+	margin-right: 2em;
+}
+
+.artisan_ai_tags_classifier_info_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.artisan_ai_tags_classifier_info_item p {
+	display: inline-block;
+	line-height: .8em;
+	margin-right: 1em;
+}
+
+#artisan_ai_tags_past_classifiers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.artisan_ai_tags_past_classifier {
+	margin-right: 1%;
+	margin-bottom: 1%;
+	padding: 2% 2% 2% 2%;
+	background-color: #cccccc;
+	border-radius: 5px;
+	width: 44%;
+}
+
+.artisan_ai_tags_classifier_info_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.artisan_ai_tags_delete_classifer {
+	margin-right: 1.5em !important;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .artisan_ai_tags_past_classifier  {
+  	width: 100%;
+  }
+}
+
+td.details-control::before {
+	position:relative;
+	height: 14px;
+	width: 14px;
+	display: block;
+	color: white;
+	border: 2px solid white;
+	border-radius: 14px;
+	box-shadow: 0 0 3px #444;
+	box-sizing: content-box;
+	text-align: center;
+	text-indent: 0 !important;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 14px;
+	content: '+';
+	background-color: #31b131;
+}
+
+td.details-control.is_shown::before {
+	content: '-';
+	background-color:#d33333;
+}
